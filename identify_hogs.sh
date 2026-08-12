@@ -1,0 +1,1 @@
+grep -E "\bOG0000154\b" /weka/health_sciences/bms/biochemistry/dearden_lab/galta815/braker-3/orthofinder/cafe5/Onychophora_Gene_Dynamics_Annotated.tsv | awk -F'\t' '{print "HOG: "$1, " | OG: "$2, " | Gene: "$3, " | Desc: "$4}'
